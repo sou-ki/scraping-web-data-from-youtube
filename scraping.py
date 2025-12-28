@@ -1,29 +1,6 @@
 from youtube_comment_downloader import YoutubeCommentDownloader
 import pandas as pd
 
-# # Inisialisasi downloader
-# downloader = YoutubeCommentDownloader()
-
-# # URL video YouTube
-# url = "https://youtu.be/6uPpUvyU7dU"
-
-# comments = []
-
-# # Ambil komentar
-# for comment in downloader.get_comments_from_url(url):
-#     text = comment.get("text", "").strip()
-#     if text:
-#         comments.append(text)
-
-# # Simpan ke DataFrame
-# df = pd.DataFrame(comments, columns=["komentar"])
-
-# # Simpan ke CSV
-# df.to_csv("komentar_youtube_internet_rakyat.csv", index=False, encoding="utf-8")
-
-# print("Jumlah komentar:", len(df))
-# print(df.head())
-
 url = "https://youtu.be/6uPpUvyU7dU?si=CGRGcUl8BM1GWpil"
 
 downloader = YoutubeCommentDownloader()
